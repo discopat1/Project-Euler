@@ -29,4 +29,8 @@ describe('App', function(){
         let result = findMultiples(20);
         assert.equal(result, true);
     });
+    it('addNumbers should create sum of all numbers divisible by 3 or 5 under 1000', function() {
+        let result = addNumbers();
+        assert.equal(result, 332667);
+    });
 });

@@ -7,10 +7,37 @@
 module.exports =  {
     findMultiples: function(num) {
         if (num%3||5 === 0) {
-            return true;
+        } else {
+            return false;
         }
     },
-    addNumbers: function(num) {
-        
+    addNumbers: function() {
+        var sum=0;
+        for (i = 0; i < 999; i++) {
+            if(i%3||5 === 0) {
+                sum+=i;
+                var numArray = [];
+                numArray.push(sum);
+            }
+        }
+        var sumIndex = numArray.length-1;
+        finalSum = numArray[sumIndex];
+        console.log(finalSum);
+        return finalSum;
     }
 }
+    function addNumbers() {
+        var sum=0;
+        for (i = 0; i < 999; i++) {
+            if(i%3||5 === 0) {
+                sum+=i;
+                var numArray = [];
+                numArray.push(sum);
+            }
+        }
+        var sumIndex = numArray.length-1;
+        finalSum = numArray[sumIndex];
+        console.log(finalSum);
+        return finalSum;
+    }
+    addNumbers();
