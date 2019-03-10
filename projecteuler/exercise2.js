@@ -1,15 +1,20 @@
-var num1 = 1;
+var start = [1, 2];
 
-var num2 = 1;
+var sum = 0;
 
-function fib() {
-   var sum = num1 + num2;
-   num2 = num1;
-   num1 = sum;
+function fib(arr) {
+    return arr[arr.length - 1] + arr[arr.length - 2];
 }
 
-while (num1 && num2 < 4000000) {
-    fib();
-}
+while (start[start.length - 1] < 4000000) {
+    start.push(fib(start));
+  }
 
+  start.forEach(function(n) {
+    if (n % 2 === 0) {
+      sum += n;
+    }
 
+    console.log(sum);
+    return sum;
+  });
