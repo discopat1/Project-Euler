@@ -1,6 +1,6 @@
 
 function factor() {
-    var num1 = 333;
+    var num1 = 600851475143;
     var factorArr = [];
     for (i=0; i<=num1; i++) {
     // first factor out
@@ -8,7 +8,7 @@ function factor() {
         factorArr.push(i);
         }
     }
-    console.log("factored array====", factorArr);
+    // console.log("factored array====", factorArr);
     var primeFactorArr = [];
     factorArr.forEach(num => {
         for (i=2; i<num; i++) {
@@ -19,8 +19,9 @@ function factor() {
             }
         }
     });
-    console.log("primed array===", primeFactorArr);
-    
+    // console.log("primed array===", primeFactorArr);
+    var last = primeFactorArr.length-2;
+    console.log(primeFactorArr[last]);
 }
 
 factor();
